@@ -78,6 +78,21 @@ function weirdString(input){
 }
 console.log(weirdString("hello world"));
 
+function possibleSums(nums){
+  let result = [];
+  let stringVer = String(nums);
+  nums = stringVer.split("").map((x)=> parseInt(x, 10));
+  for(let i=0; i<nums.length; i++){
+    let first = nums[i];
+    for(let j=i+1; j < nums.length; j++){
+      let second = nums[j];
+      // console.log(first , second);
+      result.push(first + second);
+    }
+  }
+  return result;
+}
+console.log(possibleSums(12345));
 // Do NOT touch or write anything below this line
 module.exports = {
   hello,
