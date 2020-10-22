@@ -36,10 +36,17 @@ function logEvenNumbers() {
 console.log(logEvenNumbers());
 
 // Question 6
-function sumFoursAndSevens() {
+function sumFoursAndSevens(num) {
   // Write your code here
+  let sum = 0;
+  for(let j=1; j <= num; j++){
+    if(j%4===0 || j%7===0){
+      sum += j
+    }
+  }
+  return sum
 }
-
+console.log(sumFoursAndSevens(17));
 // Question 7
 function exsAndOhs() {
   // Write your code here
