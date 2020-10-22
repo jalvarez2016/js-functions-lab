@@ -1,13 +1,14 @@
 // Question 1
-function hello() {
-  // Write your code here
+function hello(name) {
+  return `Hello, ${name}!`;
 }
 
 // Question 2
-function findProduct() {
+function findProduct(x, y) {
   // Write your code here
+  return x*y;
 }
-
+console.log(findProduct(3,5));
 // Question 3
 function getSquare() {
   //Write your code here
