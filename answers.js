@@ -15,10 +15,15 @@ function getSquare(a) {
   return a * a;
 }
 console.log(getSquare(5));
+
 // Question 4
-function makeOpposite() {
+function makeOpposite(num) {
   //Write your code here
+  return -num;
+
+  
 }
+console.log(makeOpposite(5));
 
 // Question 5
 function logEvenNumbers() {
