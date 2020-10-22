@@ -48,9 +48,35 @@ function sumFoursAndSevens(num) {
 }
 console.log(sumFoursAndSevens(17));
 // Question 7
-function exsAndOhs() {
+function exsAndOhs(num) {
   // Write your code here
+  let result = "";
+  for(let i=0; i<num; i++){
+    result += (i%2)?"O":"X";
+  }
+  return result;
 }
+console.log(exsAndOhs(7));
+
+function weirdString(input){
+  let result = "";
+  for(let i=0; i<input.length; i++){
+    let letter = input.charAt(i).toLowerCase();
+    if(letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u"){
+      continue;
+    } else {
+      result += letter;
+    }
+  }
+  for(let i=0; i<result.length; i++){
+    result = result.split("");
+    let letter = result[i];
+    result[i] = (i%2)?letter.toUpperCase():letter.toLowerCase();
+    result = result.join("");
+  }
+  return result;
+}
+console.log(weirdString("hello world"));
 
 // Do NOT touch or write anything below this line
 module.exports = {
