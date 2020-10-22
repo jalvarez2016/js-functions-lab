@@ -28,7 +28,12 @@ console.log(makeOpposite(5));
 // Question 5
 function logEvenNumbers() {
   // Write your code here
+  for(let i=0; i<=50; i+=2){
+    console.log(i);
+  }
+  return "Why is 6 afraid of 7?";
 }
+console.log(logEvenNumbers());
 
 // Question 6
 function sumFoursAndSevens() {
